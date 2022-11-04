@@ -1,27 +1,32 @@
-## The Golden Rule:
+# CSS Skills
 
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
+## Structure of CSS
 
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
+![CSS Structure](./assets/CSS-structure.png)
 
-## Making a plan
+Components
 
-1. **Make a drawing of your app. Simple "wireframes"**
-1. **Look at the drawing and name the HTML elements you'll need to realize your vision**
-1. **Look at the drawing and imagine using the app. What _state_ do you need to track?**
-1. **For each HTML element ask: Why do I need this? (i.e., "we need div to display the results in")**
-1. **Once we know _why_ we need each element, think about how to implement the "Why" as a "How" (i.e., `resultsEl.textContent = newResults`)**
-1. **Find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What happens when" for each of these events. Does any state change? Does any DOM update?**
-1. **Think about how to validate each of your features according to a Definition of Done. (Hint: console.log usually helps here.)**
-1. **Consider what features _depend_ on what other features. Use this dependency logic to figure out what order to complete tasks.**
+## Calling specific items
 
-Additional considerations:
+1. Element [Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors)
+2. all(\*) [Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors)
+3. ID [Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)
+4. Class [Docs](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors)
 
--   Ask: which of your HTML elements need to be hard coded, and which need to be dynamically generated?
--   Consider your data model.
-    -   What kinds of objects (i.e., Dogs, Friends, Todos, etc) will you need?
-    -   What are the key/value pairs?
-    -   What arrays might you need?
-    -   What needs to live in a persistence layer?
--   Is there some state we need to initialize?
--   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be reused?)
+## Nesting CSS items
+
+1. Class/ID then element or class
+2. Calling multiple items
+
+## Most common syntax
+
+1. color
+2. background (color, image)
+3. height & width
+4. font (weight, size, family)
+5. display (flex, grid)
+6. position (absolute, sticky, relative)
+7. padding
+8. margin
+9. border
+10. Using px or em or rem or vh/vw

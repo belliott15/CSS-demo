@@ -33,3 +33,20 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.move-me {
+    display: flex;
+    width: 100%;
+}
+
+.box {
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(blue, green);
+    border: 1px solid black;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+}
