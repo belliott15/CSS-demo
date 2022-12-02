@@ -1,6 +1,6 @@
 :root {
     --background: rgb(224, 234, 247);
-    --header-background: rgb(254, 251, 245);
+    --header-background: '7209b7';
     --primary-font: Corbel, 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', 'DejaVu Sans',
         'Bitstream Vera Sans', 'Liberation Sans', Verdana, 'Verdana Ref', sans-serif;
 }
@@ -8,8 +8,6 @@
 body {
     font-family: var(--primary-font);
     background: var(--background);
-    display: grid;
-    grid-template-rows: auto 1fr;
 }
 
 header {
@@ -22,7 +20,7 @@ header {
     align-items: center;
     gap: 10px;
 
-    background-color: var(--header-background);
+    background-color: rgb(67, 97, 238);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -32,4 +30,85 @@ header .logo {
 
 main {
     padding: 20px;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* Padding, margin, and border CSS */
+.model-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid black 1px;
+}
+
+.box-model {
+    color: white;
+    font-size: 2em;
+    height: 400px;
+    width: 50%;
+    border: solid black 20px;
+    margin: 10px;
+    background: linear-gradient(45deg, rebeccapurple, rgb(133, 120, 218));
+    padding: 1em;
+    overflow: hidden;
+}
+
+/* flex box CSS */
+
+.flex-practice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border: solid black 1px;
+    border-radius: 15px;
+    padding: 10px;
+    width: 50%;
+    height: 400px;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    background: linear-gradient(
+            250deg,
+            transparent,
+            rgba(198, 137, 23, 0.931) 60%,
+            rgb(27, 78, 27) 90%
+        ),
+        url('../assets/fallLeaves.png');
+    border: 5px solid rgba(198, 137, 23, 0.931) 60%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    box-shadow: 12px 13px 55px -4px rgba(153, 90, 26, 0.59);
+}
+
+/* grid box CSS */
+.grid-practice {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-columns {
+    border: solid black 2px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    padding: 0px 10px;
+}
+
+.grid-columns h4,
+p {
+    /* border: solid black 2px; */
+    display: flex;
+    justify-content: center;
 }
